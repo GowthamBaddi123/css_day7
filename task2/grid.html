@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        .container{
+            height: 100vh;
+            background-color: black;
+            color: aliceblue;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px 30px;
+            padding: 50px;
+
+        }
+        .container div{
+            background-color: rgb(135, 63, 203);
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            padding-top: 70px;
+            
+
+        }
+
+        .item1{
+            grid-column: 1/4;
+            
+        }
+        .item2{
+            grid-row: 2/6;
+            grid-column: 1/2
+        }
+        .item3{
+            grid-row:2/4;
+            grid-column: 2/4;
+        }
+        .item4{
+            grid-row: 4/6;
+            grid-column: 2/3;
+        }
+        .item5{
+            grid-row: 4/6;
+            grid-column: 3/4;
+        }
+        .item6{
+            grid-column: 1/4;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">header</div>
+        <div class="item2" style="background-color: rgb(87, 192, 192);">sidebar</div>
+        <div class="item3" style="background-color: rgb(64, 89, 193);">content-1</div>
+        <div class="item4" style="background-color: rgb(65, 149, 87);">content-2</div>
+        <div class="item5" style="background-color: rgb(132, 185, 167);">content-3</div>
+        <div class="item6">footer</div>
+        
+    </div>
+    
+</body>
+</html>
